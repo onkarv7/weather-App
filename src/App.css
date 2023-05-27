@@ -16,6 +16,7 @@ body {
 
 p {
   font-size: 1.6rem;
+
 }
 
 h1 {
@@ -68,7 +69,8 @@ h1 {
   top: 10%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 100px;
+  /* justify-content: space-around; */
 }
 
 .app .top {
@@ -95,4 +97,32 @@ h1 {
 
 .bold {
   font-weight: 700;
+}
+
+
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 4rem;
+
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .container {
+    max-width: 600px;
+  }
+
+  .app .description {
+
+    right: -70%;
+
+  }
+
+  .bold {
+    font-weight: 200;
+  }
+
 }
